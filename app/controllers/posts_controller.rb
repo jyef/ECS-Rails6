@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.first(4)
+    @posts = Post.first
 
     render json: @posts
   end
